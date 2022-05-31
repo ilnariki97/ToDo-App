@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+
+    <title>Document</title>
+    <header class="header">
+        <img src=images/Logo.svg alt="logo"/>
+    </header>
+</head>
+<body>
+<section class="toDo">
+    <h1>Приветствую!</h1>
+    <h2>Давай обновим список и начем обучение</h2>
+
+    <div class="toDo_content">
+        <div id="list" class="toDo_list">
+            <h2>Список:</h2>
+            <div class="listItem"></div>
+        </div>
+        <div class="toDo_inputs">
+            <form class="inputs" id="form">
+                <div class="inputs_number">
+                    <label>
+                        <p>Номер записи</p>
+                        <input type='text'
+                               placeholder='введи число'
+                               name='number'
+                               class='todoInput_Number'>
+                    </label>
+                </div>
+                <div class="inputs_text">
+                    <label>
+                        <p>Текст записи:</p>
+                        <input type='text'
+                               placeholder='введи текст'
+                               name='text'
+                               class='todoInput_Text'>
+                    </label>
+                </div>
+                <button class='todo-button' onclick="buttonClick(); return false">Добавить в список</button>
+            </form>
+        </div>
+    </div>
+
+</section>
+<footer>
+    <img src=images/Logo.svg alt="logo"/>
+</footer>
+
+
+</body>
+<script src="scripts.js" rel="script"></script>
+</html>
